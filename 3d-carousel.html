@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>长方体</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective: 1000px;
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			/*border: 1px solid #000;*/
+			margin: 100px auto;
+			position: relative;
+			transform-style: preserve-3d;
+			transform: rotateX(0deg) rotateY(0deg);
+			animation: sport 8s linear 0s infinite normal;
+		}
+		@keyframes sport{
+			from{
+				transform: rotateX(0deg);
+			}
+			to{
+				transform: rotateX(360deg);
+			}
+		}
+		ul:hover{
+			animation-play-state: paused;
+		}
+		ul li{
+			list-style: none;
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			line-height: 200px;
+			font-size: 40px;
+			position: absolute;
+		}
+		ul li:nth-child(1){
+			background-color:blue;
+			transform: rotateX(90deg) translateZ(100PX)
+		    scale(1.5,1);
+		}
+		ul li:nth-child(2){
+			background-color: red;
+			transform: rotateX(180deg) translateZ(100PX)
+			 scale(1.5,1);
+		}
+		ul li:nth-child(3){
+			background-color:grey;
+			transform: rotateX(270deg) translateZ(100PX)
+			scale(1.5,1);
+		}
+		ul li:nth-child(4){
+			background-color:yellow;
+			transform: rotateX(360deg) translateZ(100PX)
+			scale(1.5,1);
+		}
+		ul li:nth-child(5){
+			background-color:pink;
+			transform: rotateY(90deg) translateZ(150PX) ;
+		}
+		ul li:nth-child(6){
+			background-color: purple;
+			transform: rotateY(90deg) translateZ(-150PX);
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="liu/7.1.jpg" alt=""></li>
+		<li><img src="liu/8.1.jpg" alt=""></li>
+		<li><img src="liu/9.1.jpg" alt=""></li>
+		<li><img src="liu/10.1.jpg" alt=""></li>
+		<li><img src="liu/4.1.jpg" alt=""></li>
+		<li><img src="liu/5.1.jpg" alt=""></li>
+	</ul>
+</body>
+</html>
