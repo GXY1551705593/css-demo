@@ -1,5 +1,5 @@
-# flex-example
-about the example of flex
+# css-example
+about the example of css
 
 这是一个用css3写的一个3d轮播图
 [demo](https://hanihanihaani.github.io/css-demo/3d-carousel.html)
