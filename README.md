@@ -15,3 +15,5 @@ about the example of css
 
 
 [css-carousel](https://hanihanihaani.github.io/css-demo/css-carousel.html)
+
+[flex布局](https://hanihanihaani.github.io/css-demo/dice.html)
